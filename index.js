@@ -4,7 +4,7 @@ import Hello from './Hello';
 import './style.css';
 import FileViewer from 'react-file-viewer';
 
-const pngFile = './public/test.png';
+const pngFile = 'https://stackblitz.com/files/react-zdumzf/github/metacoding/react-zdumzf/master/test.png';
 const docxFile = 'https://stackblitz.com/files/react-zdumzf/github/metacoding/react-zdumzf/master/mehran.docx';
 
 class App extends Component {
@@ -21,16 +21,9 @@ class App extends Component {
     return (
       <div>
         <h1>Doc Viewer</h1>
+        <img src="/public/test.png" />
         <div>
-          FileViewer for PNG files
-          <FileViewer
-            fileType="png"
-            filePath={pngFile}
-            errorComponent={this.CustomErrorComponent}
-            onError={this.onError}/>
-        </div>
-        <div>
-          FileViewer for PNG files
+          FileViewer for DOCX files
           <FileViewer
             fileType="docx"
             filePath={docxFile}
