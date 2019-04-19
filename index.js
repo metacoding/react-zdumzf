@@ -4,7 +4,7 @@ import Hello from './Hello';
 import './style.css';
 import FileViewer from 'react-file-viewer';
 
-const pngFile = 'https://upload.wikimedia.org/wikipedia/commons/7/70/Example.png';
+const pngFile = './public/test.png';
 const docxFile = 'https://stackblitz.com/files/react-zdumzf/github/metacoding/react-zdumzf/master/mehran.docx';
 
 class App extends Component {
