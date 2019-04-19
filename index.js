@@ -21,22 +21,22 @@ class App extends Component {
     return (
       <div>
         <h1>Doc Viewer</h1>
-        <p>
+        <div>
           FileViewer for PNG files
           <FileViewer
             fileType="png"
             filePath={pngFile}
             errorComponent={this.CustomErrorComponent}
             onError={this.onError}/>
-        </p>
-        <p>
+        </div>
+        <div>
           FileViewer for PNG files
           <FileViewer
             fileType="docx"
             filePath={docxFile}
             errorComponent={this.CustomErrorComponent}
             onError={this.onError}/>
-        </p>
+        </div>
       </div>
     );
   }
